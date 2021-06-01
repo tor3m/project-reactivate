@@ -108,13 +108,13 @@
   flex-direction: column;
 
   &--text--title {
-    font-family: "Montserrat", sans-serif;
+    font-family: 'Montserrat', sans-serif;
     color: #114e4e;
     font-size: 18px;
     margin: 21px 14px 4px 20px;
   }
   &--text--subtitle {
-    font-family: "Montserrat", sans-serif;
+    font-family: 'Montserrat', sans-serif;
     color: #54585a;
     font-size: 16px;
     margin: 0 0 10px 20px;
@@ -122,7 +122,7 @@
   &-photo {
     background-size: cover;
     background-position: center;
-    background-image: url("../images/uni.png");
+    background-image: url('../../images/uni.png');
     width: 240px;
     height: 200px;
   }
@@ -169,7 +169,7 @@
   color: $gunmetal;
   font-size: 18px;
   background-color: white;
-  font-family: "OpenSans";
+  font-family: 'OpenSans';
   @media (min-width: 768px) {
     background-color: $white-four;
   }
