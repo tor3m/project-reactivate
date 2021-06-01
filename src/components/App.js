@@ -1,8 +1,9 @@
-import "./app.scss";
+import React from 'react';
+import '../stylesheets/app.scss';
 
 function App() {
   return (
-    <div className="App">
+    <div id='root'>
       <h1>hola mundo</h1>
     </div>
   );
