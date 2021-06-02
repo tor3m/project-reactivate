@@ -1,11 +1,13 @@
 import React from "react";
 import "../stylesheets/App.scss";
 import Header from "./Header";
+import Footer from "./Footer";
 
 function App() {
   return (
     <>
       <Header />
+      <Footer />
 
       <section className="main_container">
         <section className="cards">
@@ -233,18 +235,7 @@ function App() {
         </form>
       </section>
 
-      <footer className="footer">
-        <small className="footer-small">Awesome profile-cards &copy;2021</small>
-
-        <a title="Blanketfy" href="" target="_blank">
-          {" "}
-          <img
-            className="footer-logo"
-            src="./assets/images/logo.png"
-            alt="Blanktfy"
-          />{" "}
-        </a>
-      </footer>
+      
     </>
   );
 }
