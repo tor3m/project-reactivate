@@ -2,13 +2,17 @@ import React from "react";
 import "../stylesheets/App.scss";
 import Header from "./Header";
 import Footer from "./Footer";
-import Main from "./Main";
+import Preview from "./Preview";
+import Form from "./Form";
 
 function App() {
   return (
     <>
       <Header />
-      <Main />
+      <section className="main_container">
+        <Preview />
+        <Form />
+      </section>
       <Footer />
     </>
   );
