@@ -3,15 +3,18 @@ import "../stylesheets/App.scss";
 import Header from "./Header";
 import Footer from "./Footer";
 import Preview from "./Preview";
-import Form from "./Form";
-
+import Design from "./Design";
+import Share from "./Share";
+import Fill from "./From";
 function App() {
   return (
     <>
       <Header />
       <section className="main_container">
         <Preview />
-        <Form />
+        <form className="form" id="cleanForm">
+          <Design />
+        </form>
       </section>
       <Footer />
     </>
