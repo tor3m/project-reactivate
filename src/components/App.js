@@ -1,20 +1,20 @@
-import React from 'react';
-import '../stylesheets/App.scss';
-import Header from './Header';
-import Footer from './Footer';
-import Preview from './Preview';
-import Design from './Design';
-import Share from './Share';
-import Fill from './Fill';
+import React from "react";
+import "../stylesheets/App.scss";
+import Header from "./Header";
+import Footer from "./Footer";
+import CardPreview from "./CardPreview";
+import Design from "./Design";
+import Share from "./Share";
+import Fill from "./Fill";
 
 function App() {
   return (
     <>
       <Header />
-      <section className='main_container'>
-        <Preview />
+      <section className="main_container">
+        <CardPreview />
 
-        <form className='form' id='cleanForm'>
+        <form className="form" id="cleanForm">
           <Design />
           <Fill />
           <Share />
