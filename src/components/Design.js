@@ -1,22 +1,12 @@
 import paletteBlue from '../images/Blue.jpg';
 import paletteRed from '../images/red.jpg';
 import paletteMixed from '../images/mixed.jpg';
+import Collapsible from './Collapsible';
 
 function Design() {
   return (
     <fieldset className='user-options'>
-      <div className='icon2 js-design-title item-collapsable'>
-        <i className='far fa-object-group list-icon2b'></i>
-        <h2 className='legend-fill'>diseña</h2>
-
-        <button className='ico-scroll js-arrow-up-d'>
-          <i className='fas fa-angle-up'></i>
-        </button>
-
-        <button className='ico-scroll js-arrow-down-d js-hidden'>
-          <i className='fas fa-angle-down'></i>
-        </button>
-      </div>
+      <Collapsible />
       <div className='color-design'>
         <div className='color-container'>
           <p>COLORES</p>
