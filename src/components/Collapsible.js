@@ -1,9 +1,9 @@
 import React from 'react';
 
 class Collapsible extends React.Component {
-  constructor(props){
-    super (props)
-  }
+  // constructor(props){
+  //   super (props)
+  // }
   
 
   render() {
@@ -17,32 +17,12 @@ class Collapsible extends React.Component {
             <i className='fas fa-angle-up'></i>
           </button>
 
-          <button className='ico-scroll js-arrow-down-d js-hidden'>
+          <button className={`ico-scroll ${this.props.classButtonDown} js-hidden`}>
             <i className='fas fa-angle-down'></i>
           </button>
         </div>
         <div>{this.props.children}</div>
-        {/* <div className='icon2 js-fill-title2 item-collapsable'>
-          <i className='far fa-keyboard list-icon2b'></i>
-          <h2 className='legend-fill'>rellena</h2>
-
-          <button className='ico-scroll2 js-arrow-up-f'>
-            <i className='fas fa-angle-up'></i>
-          </button>
-          <button className='ico-scroll fill-arrow js-hidden js-arrow-down-f'>
-            <i className='fas fa-angle-down'></i>
-          </button>
-        </div>
-        <div className='icon2 js-share-title3 item-collapsable'>
-          <i className='fas fa-share-alt list-icon2b'></i>
-          <h2 className='legend-fill'>comparte</h2>
-          <button className='ico-scroll2 js-arrow-up-s'>
-            <i className='fas fa-angle-up'></i>
-          </button>
-          <button className='ico-scroll share-arrow js-arrow-down-s js-hidden'>
-            <i className='fas fa-angle-down'></i>
-          </button> 
-        </div>*/}
+        
       </>
     );
   }

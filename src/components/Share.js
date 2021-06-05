@@ -1,9 +1,9 @@
-import Collapsible from './Collapsible';
+
 
 function Share() {
   return (
     <fieldset>
-      <Collapsible />
+      
       <div className='share-container'>
         <div className='sharebutton'>
           <button className='new-card js-create-card'>

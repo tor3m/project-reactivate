@@ -5,9 +5,9 @@ import Fill from "./Fill";
 import Collapsible from "./Collapsible"
 
 class Form extends React.Component {
-  constructor(props) {
-    super(props);
-  }
+  // constructor(props) {
+  //   super(props);
+  // }
 
   render() {
     return (

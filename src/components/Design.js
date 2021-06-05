@@ -7,7 +7,6 @@ import Palette from './Palette';
 function Design() {
   return (
     // <fieldset className='user-options'>
-      <Collapsible>
         <div className='color-design'>
           <div className='color-container'>
             <p>COLORES</p>
@@ -35,7 +34,7 @@ function Design() {
             
           </div>
         </div>
-      </Collapsible>
+      
     // </fieldset>
   );
 }
