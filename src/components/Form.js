@@ -13,6 +13,7 @@ class Form extends React.Component {
     return (
       <form className="form" id="cleanForm">
         <Collapsible
+          classIcon={"far fa-object-group list-icon2b"}
           className={"diseña"}
           classButtonUp={"js-arrow-up-d"}
           classButtonDown={"js-arrow-down-d"}
@@ -20,6 +21,7 @@ class Form extends React.Component {
           <Design />
         </Collapsible>
         <Collapsible
+          classIcon={"far fa-keyboard list-icon2b"}
           className={"rellena"}
           classButtonUp={"js-arrow-up-f"}
           classButtonDown={"js-arrow-down-f"}
@@ -27,6 +29,7 @@ class Form extends React.Component {
           <Fill />
         </Collapsible>
         <Collapsible
+          classIcon={"fas fa-share-alt list-icon2b"}
           className={"comparte"}
           classButtonUp={"js-arrow-up-s"}
           classButtonDown={"js-arrow-down-s"}

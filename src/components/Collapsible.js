@@ -20,7 +20,7 @@ class Collapsible extends React.Component {
     return (
       <div>
         <div className="icon2 js-design-title" onClick={this.handleHeaderClick}>
-          <i className="far fa-object-group list-icon2b"></i>
+          <i className={this.props.classIcon}></i>
           <h2 className="legend-fill">{this.props.className}</h2>
 
           <div
