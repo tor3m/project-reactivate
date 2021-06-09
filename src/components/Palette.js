@@ -1,5 +1,3 @@
-
-
 import React from "react";
 
 class Palette extends React.Component {
@@ -9,17 +7,16 @@ class Palette extends React.Component {
 
   render() {
     return (
-        <label>
-            <input
-            className= {this.props.className}
-            id={this.props.id}
-            type='radio'
-            value={this.props.value}
-            name='palette'
-            
-            />
-            <img className='color-image' alt = '' src={this.props.src} />
-        </label>
+      <label>
+        <input
+          className={this.props.className}
+          id={this.props.id}
+          type="radio"
+          value={this.props.value}
+          name="palette"
+        />
+        <img className="color-image" alt="" src={this.props.src} />
+      </label>
     );
   }
 }
