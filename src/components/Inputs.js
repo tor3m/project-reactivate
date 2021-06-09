@@ -1,4 +1,18 @@
-function Inputs() {
+import React, { useState } from 'react';
+import '../stylesheets/App.scss';
+import GetAvatar from './GetAvatar';
+import Profile from './Profile';
+
+function Inputs(props) {
+  const [avatar, setAvatar] = useState('');
+
+  function updateAvatar(avatar) {
+    setAvatar({ avatar: avatar });
+  }
+  const intermedia(event) {
+    props.handleChangeInputs();
+  }
+
   return (
     <div className='fill-container'>
       <label>
@@ -8,6 +22,7 @@ function Inputs() {
           placeholder='Blanket Team'
           type='text'
           name='name'
+          onChange={props.handleChangeInputs}
         />
       </label>
       <label>
@@ -17,21 +32,14 @@ function Inputs() {
           placeholder='Frontend Unicorn'
           type='text'
           name='job'
+          onChange={intermedia}
         />
       </label>
       <p>Imagen de perfil</p>
 
-      <div className='image'>
-        <label className='profile-image' for='img-selector'>
-          Añadir Imagen
-        </label>
-        <input
-          type='file'
-          name=''
-          id='img-selector'
-          className='js-hidden js__profile-upload-btn'
-        />
-        <div className='button-white js__profile-image'></div>
+      <div>
+        <GetAvatar avatar={avatar} updateAvatar={updateAvatar} />
+        <Profile avatar={avatar} />
       </div>
 
       <div>
