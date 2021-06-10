@@ -2,6 +2,8 @@ import Icons from "./Icons";
 import defaultAvatar from "../images/rosalia.uni2.png";
 
 function CardPreview(props) {
+  const imagePreview =
+    props.data.photo === "" ? defaultAvatar : props.data.photo;
   return (
     <section className="cards">
       <div>
@@ -27,7 +29,7 @@ function CardPreview(props) {
         <div
           className="cards_box-photo js__profile-preview"
           // para cambiar la foto de la preview
-          style={{ backgroundImage: `url(${defaultAvatar})` }}
+          style={{ backgroundImage: `url(${imagePreview})` }}
         ></div>
         <ul className="cards_box-socialmedia">
           <Icons

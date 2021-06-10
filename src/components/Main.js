@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import CardPreview from "./CardPreview";
 import Form from "./Form";
-// import defaultAvatar from "../images/rosalia.uni2.png";
+//import defaultAvatar from "../images/rosalia.uni2.png";
 
 function Main() {
   const [data, setData] = useState({
@@ -13,6 +13,7 @@ function Main() {
     linkedin: "",
     phone: "",
   });
+
   // funcion lifting/props donde vienen todos los valores de los inputs para que se guarden y actualicen en nustro data
   const handleChangeInputs = (inputValue, inputName) => {
     console.log("Change!", inputValue, inputName);

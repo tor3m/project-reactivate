@@ -65,7 +65,8 @@ class GetAvatar extends React.Component {
   }
 
   render() {
-    const avatar = this.props.avatar === "" ? defaultAvatar : this.props.avatar;
+    // quitamos la imagen por defecto y lo dejamos vacio, porque no queremos que nos aparezca rosalia en el cuadradito chiquitin
+    const avatar = this.props.avatar === "" ? "" : this.props.avatar;
     return (
       <div className="image">
         <label className="profile-image" type="button">
