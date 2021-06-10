@@ -1,10 +1,13 @@
-import React from "react";
-import ReactDOM from "react-dom";
-import App from "./components/App";
+import React from 'react';
+import ReactDOM from 'react-dom';
+import { HashRouter } from 'react-router-dom';
+import App from './components/App';
+import Landing from './components/Landing';
 
 ReactDOM.render(
-  <React.StrictMode>
+  <HashRouter>
+    <Landing />
     <App />
-  </React.StrictMode>,
-  document.getElementById("root")
+  </HashRouter>,
+  document.getElementById('root')
 );

@@ -4,6 +4,8 @@ import '../stylesheets/App.scss';
 import Header from './Header';
 import Footer from './Footer';
 import Main from './Main';
+//import { Route, Switch, Link } from 'react-router-dom';
+//import Landing from './Landing';
 
 function App() {
   return (
