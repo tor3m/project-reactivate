@@ -1,10 +1,10 @@
-import Inputs from './Inputs';
-import React from 'react';
+import Inputs from "./Inputs";
+import React from "react";
 
 class Fill extends React.Component {
   constructor(props) {
     super(props);
-    this.state = { avatar: '' };
+    this.state = { avatar: "" };
     this.updateAvatar = this.updateAvatar.bind(this);
   }
 
@@ -14,8 +14,11 @@ class Fill extends React.Component {
 
   render() {
     return (
-      <fieldset className='info'>
-        <Inputs handleChangeInputs={this.props.handleChangeInputs} />
+      <fieldset className="info">
+        <Inputs
+          data={this.props.data}
+          handleChangeInputs={this.props.handleChangeInputs}
+        />
       </fieldset>
     );
   }
