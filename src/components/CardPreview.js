@@ -2,6 +2,8 @@ import Icons from "./Icons";
 import defaultAvatar from "../images/rosalia.uni2.png";
 
 function CardPreview(props) {
+  // aqui hemos creado la misma variable que para el cuadradito con el condicional dentro, para que coja el defaultAvatar o la imagen que le queremos subir
+
   const imagePreview =
     props.data.photo === "" ? defaultAvatar : props.data.photo;
   return (
@@ -11,6 +13,7 @@ function CardPreview(props) {
           className="cards_button reset-js"
           onclick="resetAll()"
           value="resetinfo"
+          onClick={props.handleResetButton}
         >
           <i className="far fa-trash-alt"></i> Reset
         </button>

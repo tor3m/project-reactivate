@@ -1,11 +1,14 @@
 import logo from "../images/myicon.png";
+import { Link } from "react-router-dom";
 
 function Header() {
   return (
     <header className="header-cards">
-      <a href="index.html" title="Home">
+      <Link to="/">
+        {/* <a href="index.html" title="Home"> */}
         <img className="header-cards_logo" src={logo} alt="profile-cards" />
-      </a>
+        {/* </a> */}
+      </Link>
     </header>
   );
 }

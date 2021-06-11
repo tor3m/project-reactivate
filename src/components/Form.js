@@ -11,8 +11,11 @@ class Form extends React.Component {
   }
 
   render() {
+    const handleForm = (ev) => {
+      ev.preventDefault();
+    };
     return (
-      <form className="form" id="cleanForm">
+      <form onSubmit={handleForm} className="form" id="cleanForm">
         <Collapsible
           classIcon={"far fa-object-group list-icon2b"}
           className={"diseña"}
