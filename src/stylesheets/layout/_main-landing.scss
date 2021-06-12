@@ -1,3 +1,6 @@
+* {
+  margin: 0;
+}
 body {
   background-color: $white-four;
 }
@@ -7,21 +10,30 @@ body {
   flex-direction: column;
   justify-content: space-between;
 }
+.header_logo {
+  // border: 2px solid red;
+  margin-top: 0;
+  margin-bottom: 0;
+}
 .main-container {
+  width: 100vw;
+  border: 2px solid red;
+  // height: 80vh;
   display: flex;
   flex-direction: column;
+  justify-content: center;
   align-items: center;
   max-width: 290px;
   text-align: center;
   font-size: 12.8px;
   margin-left: auto;
   margin-right: auto;
-  margin-top: 3%;
-  padding-top: 20px;
-  padding-bottom: 20px;
+  // margin-top: 3%;
+  // padding-top: 20px;
+  // padding-bottom: 20px;
   @media (min-width: 768px) {
     font-size: 16px;
-    max-width: 331px;
+    // max-width: 331px;
   }
   &__title {
     color: $dull-orange;

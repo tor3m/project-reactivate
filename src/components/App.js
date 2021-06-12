@@ -11,9 +11,9 @@ function App() {
     <>
       <Switch>
         <Route exact path="/">
-          <Header />
+          {/* <Header /> */}
           <Landing />
-          <Footer />
+          {/* <Footer /> */}
         </Route>
 
         <Route exact path="/card">

@@ -1,9 +1,10 @@
 import React from "react";
 import "./stylesheets/App.scss";
 //import Header from './components/Header';
-//import Footer from './components/Footer';
+import Footer from "./components/Footer";
 import { Link } from "react-router-dom";
 // import App from "./App";
+import Logo from "./images/logo.png";
 
 class Landing extends React.Component {
   // constructor(props) {
@@ -12,8 +13,9 @@ class Landing extends React.Component {
 
   render() {
     return (
-      <>
+      <div className="page">
         <main class="main-container">
+          <img class="header_logo" src={Logo} alt="profile-cards" />
           <h2 class="main-container__title">Crea tu tarjeta de visita</h2>
           <p class="main-container__text">
             Crea mejores contactos profesionales de forma fácil y cómoda
@@ -38,7 +40,8 @@ class Landing extends React.Component {
             <span className="main-container__link">comenzar</span>
           </Link>
         </main>
-      </>
+        <Footer />
+      </div>
     );
   }
 }
