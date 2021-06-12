@@ -1,5 +1,5 @@
 import React from "react";
-import "./stylesheets/App.scss";
+// import "./stylesheets/App.scss"; No debe tener el importa llega desde index.js a todo el componente
 //import Header from './components/Header';
 import Footer from "./components/Footer";
 import { Link } from "react-router-dom";
@@ -15,7 +15,7 @@ class Landing extends React.Component {
     return (
       <div className="page">
         <main class="main-container">
-          <img class="header_logo" src={Logo} alt="profile-cards" />
+          <img class="main-container__logo" src={Logo} alt="profile-cards" />
           <h2 class="main-container__title">Crea tu tarjeta de visita</h2>
           <p class="main-container__text">
             Crea mejores contactos profesionales de forma fácil y cómoda
