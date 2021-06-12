@@ -2,14 +2,8 @@ import paletteBlue from "../images/Blue.jpg";
 import paletteRed from "../images/red.jpg";
 import paletteMixed from "../images/mixed.jpg";
 import Palette from "./Palette";
-import { useState } from "react";
-// import "../stylesheets/App.scss";
 
 function Design(props) {
-  //   const [color, setColor] = useState("");
-  // function checked() {
-  //   if(color ===)
-  // }
   return (
     // <fieldset className='user-options'>
     <div className="color-design">
@@ -23,7 +17,6 @@ function Design(props) {
           id={"color1"}
           value={"1"}
           src={paletteBlue}
-          onChange={props.handlePaletteInput}
           checked={props.data.palette === "1"}
         ></Palette>
         <Palette

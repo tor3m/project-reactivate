@@ -7,34 +7,34 @@ function CardPreview(props) {
 
   const imagePreview =
     props.data.photo === "" ? defaultAvatar : props.data.photo;
-  function handleResetButton() {
-    // props.handleChangeInputs("", "name");
-    // props.handleChangeInputs("", "job");
-    // props.handleChangeInputs("", "email");
-    // props.handleChangeInputs("", "photo");
-    // props.handleChangeInputs("", "github");
-    // props.handleChangeInputs("", "linkedin");
-    // props.handleChangeInputs("", "phone");
-    props.handleChangeInputs("1", "palette");
-    // {
-    //   name: "",
-    //   job: "",
-    //   email: "",
-    //   photo: "",
-    //   github: "",
-    //   linkedin: "",
-    //   phone: "",
-    //   ,
-    // };
-  }
+  // function handleResetButton() {
+  //   // props.handleChangeInputs("", "name");
+  //   // props.handleChangeInputs("", "job");
+  //   // props.handleChangeInputs("", "email");
+  //   // props.handleChangeInputs("", "photo");
+  //   // props.handleChangeInputs("", "github");
+  //   // props.handleChangeInputs("", "linkedin");
+  //   // props.handleChangeInputs("", "phone");
+  //   // props.handleChangeInputs("1", "palette");
+  //   // {
+  //   //   name: "",
+  //   //   job: "",
+  //   //   email: "",
+  //   //   photo: "",
+  //   //   github: "",
+  //   //   linkedin: "",
+  //   //   phone: "",
+  //   //   ,
+  //   // };
+  // }
   return (
     <section className="cards">
       <div>
         <button
           className="cards_button reset-js"
-          onclick="resetAll()"
-          value="resetinfo"
-          onClick={handleResetButton}
+          // onclick="resetAll()"
+          // value="resetinfo"
+          onClick={props.handleResetButton}
         >
           <i className="far fa-trash-alt"></i> Reset
         </button>
@@ -59,14 +59,14 @@ function CardPreview(props) {
         ></div>
         <ul className="cards_box-socialmedia">
           <Icons
+            className={"far fa-envelope cards_box-icon-social js-social"}
+            anchor={"js-preview-mail"}
+          ></Icons>
+          <Icons
             className={
               "fas fa-mobile-alt cards_box-icon-social js-preview-phone js-social"
             }
             anchor={'href = ""'}
-          ></Icons>
-          <Icons
-            className={"far fa-envelope cards_box-icon-social js-social"}
-            anchor={"js-preview-mail"}
           ></Icons>
           <Icons
             className={"fab fa-linkedin-in cards_box-icon-social js-social"}

@@ -15,6 +15,9 @@ function Inputs(props) {
   function handleInputs(event) {
     props.handleChangeInputs(event.target.value, event.target.name);
   }
+  // const handleReset = (ev) => {
+  //   props.handleResetButton(ev.currentTarget.value);
+  // };
 
   return (
     <div className="fill-container">
@@ -25,6 +28,7 @@ function Inputs(props) {
           placeholder="Blanket Team"
           type="text"
           name="name"
+          value={props.data.name}
           onChange={handleInputs}
         />
       </label>
@@ -35,6 +39,7 @@ function Inputs(props) {
           placeholder="Frontend Unicorn"
           type="text"
           name="job"
+          value={props.data.job}
           onChange={handleInputs}
         />
       </label>
@@ -56,8 +61,9 @@ function Inputs(props) {
             className="js-form formies js-mail"
             placeholder="blanket@blanket.com"
             type="email"
-            id="mail"
-            name="mail"
+            id="email"
+            name="email"
+            value={props.data.email}
             onChange={handleInputs}
           />
         </p>
@@ -69,6 +75,7 @@ function Inputs(props) {
             type="tel"
             id="phone"
             name="phone"
+            value={props.data.phone}
             onChange={handleInputs}
           />
         </p>
@@ -79,6 +86,7 @@ function Inputs(props) {
             placeholder="Blanket.Linkedin"
             type="text"
             name="linkedin"
+            value={props.data.linkedin}
             onChange={handleInputs}
           />
         </p>
@@ -89,6 +97,7 @@ function Inputs(props) {
             placeholder="Blanket.GitHub"
             type="text"
             name="github"
+            value={props.data.github}
             onChange={handleInputs}
           />
         </p>

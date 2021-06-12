@@ -36,6 +36,7 @@ class Form extends React.Component {
           <Fill
             data={this.props.data}
             handleChangeInputs={this.props.handleChangeInputs}
+            handleResetButton={this.props.handleResetButton}
           />
         </Collapsible>
         <Collapsible

@@ -16,6 +16,7 @@ class Fill extends React.Component {
     return (
       <fieldset className="info">
         <Inputs
+          handleResetButton={this.props.handleResetButton}
           data={this.props.data}
           handleChangeInputs={this.props.handleChangeInputs}
         />

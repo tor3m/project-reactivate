@@ -14,6 +14,18 @@ function Main() {
     palette: "1",
   });
 
+  const handleResetButton = () => {
+    setData({
+      name: "",
+      job: "",
+      email: "",
+      photo: "",
+      github: "",
+      linkedin: "",
+      phone: "",
+      palette: "1",
+    });
+  };
   // const handleResetButton = (ev) => {
   //   // const resetName = data.name === "" ? "Nombre Apellidos" : data.name;
   //   setData("");
@@ -23,19 +35,23 @@ function Main() {
   // };
   // funcion lifting/props donde vienen todos los valores de los inputs para que se guarden y actualicen en nustro data
 
-  const handleChangeInputs = (inputValue, inputName) => {
-    console.log("Change!", inputValue, inputName);
+  const handleChangeInputs = (inputValue, inputData) => {
+    console.log("Change!", inputValue, inputData);
     setData({
       ...data,
-      [inputName]: inputValue,
+      [inputData]: inputValue,
     });
   };
 
   return (
     <section className="main_container">
       {/* esto se hace para exportar a las hijas todo el objeto data */}
-      <CardPreview data={data} handleChangeInputs={handleChangeInputs} />
-      <Form data={data} handleChangeInputs={handleChangeInputs} />{" "}
+      <CardPreview data={data} handleResetButton={handleResetButton} />
+      <Form
+        data={data}
+        handleChangeInputs={handleChangeInputs}
+        handleResetButton={handleResetButton}
+      />
     </section>
   );
 }
