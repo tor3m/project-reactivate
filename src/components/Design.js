@@ -5,13 +5,10 @@ import Palette from "./Palette";
 import { useState } from "react";
 
 function Design(props) {
-
-const [color, setColor] = useState('red');
-
-const handleInputColor = (ev) => {
-  setColor (ev.currentTarget.value)
-}
-
+  //   const [color, setColor] = useState("");
+  // function checked() {
+  //   if(color ===)
+  // }
   return (
     // <fieldset className='user-options'>
     <div className="color-design">
@@ -19,29 +16,30 @@ const handleInputColor = (ev) => {
         <p>COLORES</p>
       </div>
       <div className="radio-color">
-        <Palette handleInputColor={props.handleInputColor}
+        <Palette
+          handleChangeInputs={props.handleChangeInputs}
           className={"js-form js-palette color js-color1 "}
           id={"color1"}
-          value={"blue"}
+          value={"1"}
           src={paletteBlue}
-          onChange={props.handleRadios}
-          checked={color==="blue"}
+          onChange={props.handlePaletteInput}
+          checked={props.data.palette === "1"}
         ></Palette>
         <Palette
           className={"js-form js-palette color js-color2"}
           id={"color2"}
-          value={"red"}
+          value={"2"}
           src={paletteRed}
-          onChange={props.handleRadios}
-          checked={color==="red"}
+          handleChangeInputs={props.handleChangeInputs}
+          checked={props.data.palette === "2"}
         ></Palette>
         <Palette
           className={"js-form js-palette color js-color3"}
           id={"color3"}
-          value={"mixedcolor"}
+          value={"3"}
           src={paletteMixed}
-          onChange={props.handleRadios}
-          checked={color==="mixedcolor"}
+          handleChangeInputs={props.handleChangeInputs}
+          checked={props.data.palette === "3"}
         ></Palette>
       </div>
     </div>

@@ -1,6 +1,5 @@
 import React from "react";
 import PropTypes from "prop-types";
-import defaultAvatar from "../images/rosalia.uni2.png";
 
 class GetAvatar extends React.Component {
   constructor(props) {

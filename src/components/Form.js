@@ -7,12 +7,6 @@ import Collapsible from "./Collapsible";
 class Form extends React.Component {
   constructor(props) {
     super(props);
-    this.nombre = "";
-    this.handleRadios=this.handleRadios.bind(this);
-  }
-    
-   handleRadios(ev) {
-    this.props.handleInputColor(ev.target.value);
   }
 
   render() {
@@ -27,7 +21,10 @@ class Form extends React.Component {
           classButtonUp={"js-arrow-up-d"}
           classButtonDown={"js-arrow-down-d"}
         >
-          <Design handleInputColor={this.props.handleInputColor}/>
+          <Design
+            data={this.props.data}
+            handleChangeInputs={this.props.handleChangeInputs}
+          />
         </Collapsible>
         <Collapsible
           classIcon={"far fa-keyboard list-icon2b"}

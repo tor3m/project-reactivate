@@ -8,12 +8,10 @@ function Inputs(props) {
 
   // funcion lifting para previsualizar la imagen en el cuadradito
   function updateAvatar(avatar) {
-    console.log("Avatar!", avatar);
-    //setAvatar({ avatar: avatar });
-
     props.handleChangeInputs(avatar, "photo");
   }
-  // funcion intermedia con la que cambiamos el valor y se lo pasamos a la madre a traves del lifting (la que pasamos a partir de ahora a las hijas)
+
+  // funcion lifting para el resto de inputs
   function handleInputs(event) {
     props.handleChangeInputs(event.target.value, event.target.name);
   }
