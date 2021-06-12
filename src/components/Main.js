@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import CardPreview from "./CardPreview";
 import Form from "./Form";
-
+// import "../stylesheets/App.scss";
 //import defaultAvatar from "../images/rosalia.uni2.png";
 
 function Main() {
