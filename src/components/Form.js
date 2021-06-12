@@ -3,7 +3,6 @@ import Design from "./Design";
 import Share from "./Share";
 import Fill from "./Fill";
 import Collapsible from "./Collapsible";
-// import "../stylesheets/App.scss";
 
 class Form extends React.Component {
   constructor(props) {

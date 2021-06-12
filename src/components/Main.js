@@ -26,13 +26,7 @@ function Main() {
       palette: "1",
     });
   };
-  // const handleResetButton = (ev) => {
-  //   // const resetName = data.name === "" ? "Nombre Apellidos" : data.name;
-  //   setData("");
-  //   if (data.name === "") {
-  //     return resetName;
-  //   }
-  // };
+
   // funcion lifting/props donde vienen todos los valores de los inputs para que se guarden y actualicen en nustro data
 
   const handleChangeInputs = (inputValue, inputData) => {

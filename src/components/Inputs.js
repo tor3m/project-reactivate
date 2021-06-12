@@ -15,9 +15,6 @@ function Inputs(props) {
   function handleInputs(event) {
     props.handleChangeInputs(event.target.value, event.target.name);
   }
-  // const handleReset = (ev) => {
-  //   props.handleResetButton(ev.currentTarget.value);
-  // };
 
   return (
     <div className="fill-container">
