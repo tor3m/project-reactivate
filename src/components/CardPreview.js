@@ -50,11 +50,13 @@ function CardPreview(props) {
           ></Icons>
           <Icons
             className={"fab fa-linkedin-in cards_box-icon-social js-social"}
-            anchor={`"js-preview-linkedin" 'target="_blank"' 'href=""'`}
+            anchor={`"js-preview-linkedin" 'target="_blank"'`}
+            href={`https://linkedin.com/in/${props.data.linkedin}`}
           ></Icons>
           <Icons
             className={"fab fa-github-alt cards_box-icon-social js-social"}
-            anchor={`'js-preview-github' "target='_blank'" "href=''"`}
+            anchor={`'js-preview-github' "target='_blank'" "`}
+            href={`https://github.com/${props.data.github}`}
           ></Icons>
         </ul>
       </section>
