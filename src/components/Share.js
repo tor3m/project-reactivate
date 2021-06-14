@@ -1,26 +1,38 @@
+import { useState } from "react";
+import ErrorMessage from "./ErrorMessage";
+import SuccessMessage from "./SuccessMessage";
 
+function Share(props) {
+  const [status, setStatus] = useState("No enviado"); // "No enviado", "Me ha dado error", "Me ha dado ok"
 
-function Share() {
+  const handleCreateCard = () => {
+    fetch("https://awesome-profile-cards.herokuapp.com/card", {
+      method: "POST",
+      headers: {
+        Accept: "application/json",
+        "Content-Type": "application/json",
+      },
+      body: JSON.stringify(props.data),
+    })
+      .then((response) => response.json())
+      .then((res) => {
+        if (res.success === false) {
+          setStatus("Me ha dado error");
+        } else {
+          setStatus("Me ha dado ok");
+          //setURL(res.cardURL);
+        }
+      });
+  };
   return (
-    <fieldset>
-      
-      <div className='share-container'>
-        <div className='sharebutton'>
-          <button className='new-card js-create-card'>
-            <i className='far fa-address-card list-icon2c'></i> Crear tarjeta
-          </button>
-        </div>
-        <div className='card-done js-hidden'>
-          <p className='tarjeta'>La tarjeta ha sido creada:</p>
-          <p className='url js-generate'></p>
-          <button className='twitter-share' type='button'>
-            {/* <i className="fab fa-twitter list-icon2c"></i>
-                  Compartir en twitter
-                <a className="js-twitter-link" title="Twitter"></a> */}
-          </button>
-        </div>
+    <div className="share-container">
+      <div className="sharebutton" onClick={handleCreateCard}>
+        <i className="far fa-address-card list-icon2c"></i>
+        <div className="new-card js-create-card">Crear Tarjeta</div>
       </div>
-    </fieldset>
+      {status === "Me ha dado error" ? <ErrorMessage /> : null}
+      {status === "Me ha dado ok" ? <SuccessMessage url={""} /> : null}
+    </div>
   );
 }
 

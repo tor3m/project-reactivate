@@ -44,7 +44,7 @@ class Form extends React.Component {
           classButtonUp={"js-arrow-up-s"}
           classButtonDown={"js-arrow-down-s"}
         >
-          <Share />
+          <Share data={this.props.data} />
         </Collapsible>
       </form>
     );

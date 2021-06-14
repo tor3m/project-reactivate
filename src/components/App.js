@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState, useEffect } from "react";
 import PropTypes from "prop-types";
 import "../stylesheets/App.scss";
 import Header from "./Header";
@@ -6,6 +6,7 @@ import Footer from "./Footer";
 import Main from "./Main";
 import Landing from "../Landing";
 import { Route, Switch } from "react-router-dom";
+
 function App() {
   return (
     <>

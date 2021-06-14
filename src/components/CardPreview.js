@@ -39,12 +39,14 @@ function CardPreview(props) {
           <Icons
             className={"far fa-envelope cards_box-icon-social js-social"}
             anchor={"js-preview-mail"}
+            href={`mailto:${props.data.email}`}
           ></Icons>
           <Icons
             className={
               "fas fa-mobile-alt cards_box-icon-social js-preview-phone js-social"
             }
             anchor={'href = ""'}
+            href={`tel:${props.data.phone}`}
           ></Icons>
           <Icons
             className={"fab fa-linkedin-in cards_box-icon-social js-social"}

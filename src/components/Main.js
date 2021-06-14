@@ -1,6 +1,7 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import CardPreview from "./CardPreview";
 import Form from "./Form";
+import ls from "../services/localStorage";
 
 function Main() {
   const [data, setData] = useState({
@@ -13,6 +14,19 @@ function Main() {
     phone: "",
     palette: "1",
   });
+
+  //tomar el valor
+  useEffect(() => {
+    const dataInput = ls.get("dataInput");
+    if (dataInput) {
+      setData(dataInput);
+    }
+  }, []);
+
+  //guardar el valor
+  useEffect(() => {
+    ls.set("dataInput", data);
+  }, [data]);
 
   const handleResetButton = () => {
     setData({

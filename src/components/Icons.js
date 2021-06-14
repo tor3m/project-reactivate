@@ -8,9 +8,9 @@ class Icons extends React.Component {
   render() {
     return (
       <li className="cards_box-socialmedia--item">
-        <i className={this.props.className}>
-          <a className={this.props.anchor}></a>
-        </i>
+        <a className={this.props.anchor} href={this.props.href}>
+          <i className={this.props.className}></i>
+        </a>
       </li>
     );
   }
