@@ -54,7 +54,11 @@ function Main() {
   return (
     <section className="main_container">
       {/* esto se hace para exportar a las hijas todo el objeto data */}
-      <CardPreview data={data} handleResetButton={handleResetButton} />
+      <CardPreview
+        data={data}
+        handleChangeInputs={handleChangeInputs}
+        handleResetButton={handleResetButton}
+      />
       <Form
         data={data}
         handleChangeInputs={handleChangeInputs}
