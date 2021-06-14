@@ -5,7 +5,7 @@ function SuccessMessage(props) {
   return (
     <div className="card-done ">
       <p className="tarjeta">La tarjeta ha sido creada:</p>
-      <a className="url js-generate" href={props.url}>
+      <a className="url js-generate" target="_blank" href={props.url}>
         <p className="url js-generate">URL: {props.url}</p>
       </a>
 
