@@ -22,10 +22,10 @@ function CardPreview(props) {
       >
         <div className="cards_box-border js-border"></div>
         <div className="cards-box--text">
-          <h1 className="cards_box--text--title js-preview-name">
+          <h2 className="cards_box--text--title js-preview-name">
             {/* para pintar en la card preview */}
             {props.data.name === "" ? "Nombre Apellidos" : props.data.name}
-          </h1>
+          </h2>
           <h2 className="cards_box--text--subtitle js-preview-job">
             {props.data.job === "" ? "Front-End Developer" : props.data.job}
           </h2>

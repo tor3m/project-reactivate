@@ -27,7 +27,7 @@ function Share(props) {
   return (
     <div className="share-container">
       <div className="sharebutton" onClick={handleCreateCard}>
-        <i className="far fa-address-card list-icon2c"></i>
+        {/* <i className="far fa-address-card list-icon2c"></i> */}
         <div className="new-card js-create-card">Crear Tarjeta</div>
       </div>
       {status === "Me ha dado error" ? <ErrorMessage /> : null}
