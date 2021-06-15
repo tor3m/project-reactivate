@@ -12,7 +12,7 @@
   justify-content: center;
   align-items: center;
   width: 100%;
-  background-color: #bfcdd0;
+  background-color: #599894;
 
   :hover {
     cursor: pointer;
@@ -228,7 +228,7 @@
   align-items: center;
   width: 140px;
   height: 30px;
-  background-color: $dull-orange;
+  background-color: #f15fd6;
   color: white;
   border-radius: 5px;
   margin-bottom: 20px;
@@ -261,7 +261,7 @@
   }
 }
 .list-icon2b {
-  color: $dull-orange;
+  color: #f15fd6;
   margin-right: 10px;
   font-size: 18px;
 }
@@ -299,7 +299,7 @@
   justify-content: center;
   align-items: center;
   @media (min-width: 768px) {
-    background-color: $dull-orange;
+    background-color: #f15fd6;
   }
   > i {
     margin-right: 8px;

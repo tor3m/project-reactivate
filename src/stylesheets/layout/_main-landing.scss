@@ -2,7 +2,7 @@
   margin: 0;
 }
 body {
-  background-color: $white-four;
+  background-color: #599894;
 }
 .page {
   height: 100vh;
@@ -18,7 +18,6 @@ body {
 //   background-color: brown;
 // }
 .main-container {
-  
   height: 80%;
   display: flex;
   flex-direction: column;
@@ -39,16 +38,16 @@ body {
   //   margin-bottom: 0;
   @media (min-width: 768px) {
     font-size: 16px;
-      // max-width: 331px;
+    // max-width: 331px;
   }
   &__logo {
-      // border: 2px solid red;
-      // margin-top: 70px;
+    // border: 2px solid red;
+    // margin-top: 70px;
     width: 300px;
-      // margin-bottom: 0;
+    // margin-bottom: 0;
   }
   &__title {
-    color: $dull-orange;
+    color: black;
     font-family: $landing-title;
     font-weight: 900;
     font-size: 19px;
@@ -58,7 +57,7 @@ body {
   }
 
   .nav-container {
-    border: solid rgba(225, 115, 52, 0.21) 1.6px;
+    border: solid #5ce7e7 1.6px;
     border-radius: 4px;
     width: 100%;
     display: flex;
@@ -80,7 +79,7 @@ body {
           font-size: 16px;
         }
         .list-icon {
-          color: $dull-orange;
+          color: #f15fd6;
           font-size: 22.4px;
           @media (min-width: 768px) {
             font-size: 28px;
@@ -93,7 +92,7 @@ body {
     color: $white-three;
     font-weight: 600;
     font-size: 16px;
-    background-color: #438792;
+    background-color: #f15fd6;
     border-radius: 21px;
     text-transform: uppercase;
     padding: 10px 20px;
@@ -104,7 +103,8 @@ body {
     transition: background-color ease 0.5s;
     transition: all 0.5s ease-in-out;
     &:hover {
-      background-color: $dull-orange;
+      background-color: #5ce7e7;
+      color: #f15fd6;
       transform: scale(1.1);
     }
     @media (min-width: 768px) {

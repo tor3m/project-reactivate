@@ -4,7 +4,7 @@ import React from "react";
 import Footer from "./components/Footer";
 import { Link } from "react-router-dom";
 // import App from "./App";
-import Logo from "./images/logo.png";
+import giftlogo from "./images/giftlogo.gif";
 
 class Landing extends React.Component {
   // constructor(props) {
@@ -15,8 +15,14 @@ class Landing extends React.Component {
     return (
       <div className="page">
         <main class="main-container">
-          <img class="main-container__logo" src={Logo} alt="profile-cards" />
-          <h2 class="main-container__title">Crea tu tarjeta de visita</h2>
+          <img
+            class="main-container__logo"
+            src={giftlogo}
+            alt="profile-cards"
+          />
+          <h2 class="main-container__title">
+            Reactiva tu presente, diseña tu futuro
+          </h2>
           <p class="main-container__text">
             Crea mejores contactos profesionales de forma fácil y cómoda
           </p>
