@@ -12,6 +12,14 @@ server.use(express.static(staticServerPath));
 
 // API: listen fetch requests
 // API request > GET > http://localhost:3000/users
+
+server.get('/users', (req, res) => {
+  const response = {
+    users: [{ name: 'So' }, { name: 'María' }],
+  };
+  res.json(response);
+});
+
 server.post('/card', (req, res) => {
   let response = {};
   console.log(req.body);
@@ -27,7 +35,7 @@ server.post('/card', (req, res) => {
   ) {
     response = {
       success: false,
-      error: 'Intentalo más tarde:) !',
+      error: 'Faltan campos por rellenar!',
     };
     res.json(response);
   } else {
