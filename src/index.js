@@ -1,7 +1,9 @@
 const express = require('express');
 const cors = require('cors');
 
+// Digo al servidor: mi motor de plantillas es este.
 const server = express();
+server.set('view engine', 'ejs');
 
 const userCards = [];
 
@@ -11,12 +13,12 @@ server.use(express.json({ limit: '50mb' }));
 // API: listen fetch requests
 // API request > GET > http://localhost:3000/users
 
-server.get('/users', (req, res) => {
-  const response = {
-    users: [{ name: 'So' }, { name: 'María' }],
-  };
-  res.json(response);
-});
+// server.get('/users', (req, res) => {
+//   const response = {
+//     users: [{ name: 'So' }, { name: 'María' }],
+//   };
+//   res.json(response);
+// });
 
 server.post('/card', (req, res) => {
   let response = {};
@@ -37,7 +39,7 @@ server.post('/card', (req, res) => {
     };
     res.json(response);
   } else {
-    // Falta base de datos que devolverá cardID
+    // base de datos que devolverá cardID
     const cardId = 'id-' + Date.now();
     userCards.push({
       id: cardId,
@@ -58,9 +60,9 @@ server.post('/card', (req, res) => {
     res.json(response);
   }
 });
-
+// Crear Tarjeta
 server.get('/card/:cardId', (req, res) => {
-  console.log(req.params.cardId);
+  //console.log(req.params.cardId);
   const foundCard = userCards.find(
     (userCard) => userCard.id === req.params.cardId
   );
@@ -68,8 +70,8 @@ server.get('/card/:cardId', (req, res) => {
     res.send('No encontrado');
   } else {
     console.log(foundCard);
-    res.json(foundCard);
-    //res.render('pages/card', foundCard) // <%= name %>
+    //res.json(foundCard);
+    res.render('pages/card', foundCard); // <%= name %>
   }
 });
 
