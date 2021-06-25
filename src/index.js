@@ -63,7 +63,8 @@ server.post("/card", (req, res) => {
       name: req.body.palette,
     });
     response = {
-      cardURL: "", //enlace de la url que se crea,
+      cardURL:
+        "https://awesome-cards-profile-team-8.herokuapp.com/card/{id de db}", //enlace de la url que se crea,
     };
     //devolvemos la respuesta
     res.json(response);
