@@ -60,7 +60,34 @@ server.post("/card", (req, res) => {
   }
 });
 
+server.get("/card/:cardId", (req, res) => {
+  console.log(req.params.cardId);
+  const foundCard = userCards.find(
+    (userCard) => userCard.id === req.params.cardId
+  );
+  if (foundCard === undefined) {
+    res.send("No encontrado");
+  } else {
+    console.log(foundCard);
+    res.json(foundCard);
+    //res.render('pages/card', foundCard) // <%= name %>
+  }
+});
+
+// // API request > POST > http://localhost:3000/new-user
+// server.post('/card', (req, res) => {
+//   // console request body params
+//   console.log(`Creating the user in database with user name: `);
+//   const response = {
+//     result: `User created:`,
+//   };
+//   res.json(response);
+// });
 const serverPort = 4000;
 server.listen(serverPort, () => {
-  console.log(`Server listening at http://localhost:4000/card`);
+  console.log(`Server listening at http://localhost:${serverPort}`);
 });
+
+// STATIC SERVER: listen files in public folder
+const staticServerPath = "./public"; // relative to the root of the project
+server.use(express.static(staticServerPath));
