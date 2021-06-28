@@ -1,14 +1,14 @@
-import React, { useState } from "react";
-import "../stylesheets/App.scss";
-import GetAvatar from "./GetAvatar";
-import Profile from "./Profile";
+import React, { useState } from 'react';
+import '../stylesheets/App.scss';
+import GetAvatar from './GetAvatar';
+import Profile from './Profile';
 
 function Inputs(props) {
-  const [avatar, setAvatar] = useState("");
+  const [avatar, setAvatar] = useState('');
 
   // funcion lifting para previsualizar la imagen en el cuadradito
   function updateAvatar(avatar) {
-    props.handleChangeInputs(avatar, "photo");
+    props.handleChangeInputs(avatar, 'photo');
   }
 
   // funcion lifting para el resto de inputs
@@ -17,14 +17,14 @@ function Inputs(props) {
   }
 
   return (
-    <div className="fill-container">
+    <div className='fill-container'>
       <label>
         Nombre completo
         <input
-          className="js-form formies js-name"
-          placeholder="Blanket Team"
-          type="text"
-          name="name"
+          className='js-form formies js-name'
+          placeholder=' Sally Field'
+          type='text'
+          name='name'
           value={props.data.name}
           onChange={handleInputs}
         />
@@ -32,10 +32,10 @@ function Inputs(props) {
       <label>
         Puesto
         <input
-          className="js-form formies js-job"
-          placeholder="Frontend Unicorn"
-          type="text"
-          name="job"
+          className='js-form formies js-job'
+          placeholder='Frontend Developer'
+          type='text'
+          name='job'
           value={props.data.job}
           onChange={handleInputs}
         />
@@ -55,11 +55,11 @@ function Inputs(props) {
         <p>
           E-mail
           <input
-            className="js-form formies js-mail"
-            placeholder="blanket@blanket.com"
-            type="email"
-            id="email"
-            name="email"
+            className='js-form formies js-mail'
+            placeholder='sally@contact.com'
+            type='email'
+            id='email'
+            name='email'
             value={props.data.email}
             onChange={handleInputs}
           />
@@ -67,11 +67,11 @@ function Inputs(props) {
         <p>
           Teléfono
           <input
-            className="js-form js-preview-phone formies js-phone"
-            placeholder="000000000"
-            type="tel"
-            id="phone"
-            name="phone"
+            className='js-form js-preview-phone formies js-phone'
+            placeholder='000000000'
+            type='tel'
+            id='phone'
+            name='phone'
             value={props.data.phone}
             onChange={handleInputs}
           />
@@ -79,10 +79,10 @@ function Inputs(props) {
         <p>
           Linkedin
           <input
-            className="js-form formies js-linkedin"
-            placeholder="Blanket.Linkedin"
-            type="text"
-            name="linkedin"
+            className='js-form formies js-linkedin'
+            placeholder='Sally Field'
+            type='text'
+            name='linkedin'
             value={props.data.linkedin}
             onChange={handleInputs}
           />
@@ -90,10 +90,10 @@ function Inputs(props) {
         <p>
           Github
           <input
-            className="js-form formies js-github"
-            placeholder="Blanket.GitHub"
-            type="text"
-            name="github"
+            className='js-form formies js-github'
+            placeholder='SallyF'
+            type='text'
+            name='github'
             value={props.data.github}
             onChange={handleInputs}
           />

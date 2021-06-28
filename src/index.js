@@ -1,18 +1,18 @@
-const express = require("express");
-const cors = require("cors");
+const express = require('express');
+const cors = require('cors');
 
 // Digo al servidor: mi motor de plantillas es este.
 const server = express();
-server.set("view engine", "ejs");
+server.set('view engine', 'ejs');
 
 const userCards = [];
 
 server.use(cors());
-server.use(express.json({ limit: "50mb" }));
+server.use(express.json({ limit: '50mb' }));
 
-const serverPort = process.env.PORT || 3000;
+const serverPort = process.env.PORT || 4000;
 // STATIC SERVER: listen files in public folder
-const staticServerPath = "./public"; // relative to the root of the project
+const staticServerPath = './public'; // relative to the root of the project
 server.use(express.static(staticServerPath));
 
 server.listen(serverPort, () => {
@@ -29,59 +29,61 @@ server.listen(serverPort, () => {
 //   res.json(response);
 // });
 
-server.post("/card", (req, res) => {
+server.post('/card', (req, res) => {
   let response = {};
   console.log(req.body);
   if (
-    req.body.palette === "" ||
-    req.body.name === "" ||
-    req.body.job === "" ||
-    req.body.email === "" ||
-    req.body.photo === "" ||
-    req.body.github === "" ||
-    req.body.linkedin === "" ||
-    req.body.phone === ""
+    req.body.palette === '' ||
+    req.body.name === '' ||
+    req.body.job === '' ||
+    req.body.email === '' ||
+    req.body.photo === '' ||
+    req.body.github === '' ||
+    req.body.linkedin === '' ||
+    req.body.phone === ''
   ) {
     //mensaje de error
     response = {
-      error: "Debe rellenar todos los campos",
+      error: 'Debe rellenar todos los campos',
     };
     console.log(res.json(response));
     //devolvemos la respuesta
     res.json(response);
   } else {
     // base de datos que devolverá cardID
-    const cardId = "id-" + Date.now();
+    const cardId = 'id-' + Date.now();
     userCards.push({
+      id: cardId,
       palette: req.body.palette,
-      name: req.body.palette,
-      job: req.body.palette,
-      name: req.body.palette,
-      name: req.body.palette,
-      name: req.body.palette,
-      name: req.body.palette,
-      name: req.body.palette,
+      name: req.body.name,
+      job: req.body.job,
+      email: req.body.email,
+      photo: req.body.photo,
+      phone: req.body.phone,
+      linkedin: req.body.linkedin,
+      github: req.body.github,
     });
     response = {
-      cardURL:
-        "https://awesome-cards-profile-team-8.herokuapp.com/card/{id de db}", //enlace de la url que se crea,
+      cardURL: 'http://localhost:4000/card/' + cardId,
+
+      // 'https://awesome-cards-profile-team-8.herokuapp.com/card/{id de db}', //enlace de la url que se crea,
     };
     //devolvemos la respuesta
     res.json(response);
   }
 });
 // Crear Tarjeta
-server.get("/card/:cardId", (req, res) => {
+server.get('/card/:cardId', (req, res) => {
   //console.log(req.params.cardId);
   const foundCard = userCards.find(
     (userCard) => userCard.id === req.params.cardId
   );
   if (foundCard === undefined) {
-    res.send("No encontrado");
+    res.send('No encontrado');
   } else {
     console.log(foundCard);
     //res.json(foundCard);
-    res.render("pages/card", foundCard); // <%= name %>
+    res.render('pages/card', foundCard); // <%= name %>
   }
 });
 
