@@ -10,7 +10,7 @@ const userCards = [];
 server.use(cors());
 server.use(express.json({ limit: "50mb" }));
 
-const serverPort = process.env.PORT || 3000;
+const serverPort = process.env.PORT || 3001;
 // STATIC SERVER: listen files in public folder
 const staticServerPath = "./public"; // relative to the root of the project
 server.use(express.static(staticServerPath));
@@ -56,11 +56,11 @@ server.post("/card", (req, res) => {
       palette: req.body.palette,
       name: req.body.palette,
       job: req.body.palette,
-      name: req.body.palette,
-      name: req.body.palette,
-      name: req.body.palette,
-      name: req.body.palette,
-      name: req.body.palette,
+      email: req.body.palette,
+      photo: req.body.palette,
+      github: req.body.palette,
+      linkedin: req.body.palette,
+      phone: req.body.palette,
     });
     response = {
       cardURL:
