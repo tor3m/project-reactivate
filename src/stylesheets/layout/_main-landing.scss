@@ -2,7 +2,11 @@
   margin: 0;
 }
 body {
-  background-color: #599894;
+  // background-color: #599894;
+  // background-image: url(/images/cohete.gif);
+  // background-repeat: no-repeat;
+  // background-size: cover;
+  background: linear-gradient(#9fe4df, #10504c);
 }
 .page {
   height: 100vh;
@@ -57,7 +61,8 @@ body {
   }
 
   .nav-container {
-    border: solid #5ce7e7 1.6px;
+    border: solid 1.6px;
+    box-shadow: 10px 5px 5px black;
     border-radius: 4px;
     width: 100%;
     display: flex;
@@ -79,7 +84,7 @@ body {
           font-size: 16px;
         }
         .list-icon {
-          color: #f15fd6;
+          color: #ec693c;
           font-size: 22.4px;
           @media (min-width: 768px) {
             font-size: 28px;
@@ -92,7 +97,7 @@ body {
     color: $white-three;
     font-weight: 600;
     font-size: 16px;
-    background-color: #f15fd6;
+    background-color: #ec693c;
     border-radius: 21px;
     text-transform: uppercase;
     padding: 10px 20px;
@@ -103,8 +108,8 @@ body {
     transition: background-color ease 0.5s;
     transition: all 0.5s ease-in-out;
     &:hover {
-      background-color: #5ce7e7;
-      color: #f15fd6;
+      background-color: white;
+      color: #ec693c;
       transform: scale(1.1);
     }
     @media (min-width: 768px) {

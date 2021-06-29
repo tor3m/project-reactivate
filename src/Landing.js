@@ -21,29 +21,29 @@ class Landing extends React.Component {
             alt="profile-cards"
           />
           <h2 class="main-container__title">
-            Reactiva tu presente, diseña tu futuro
+            Reactivate your present, design your future
           </h2>
           <p class="main-container__text">
-            Crea mejores contactos profesionales de forma fácil y cómoda
+            Create your business cards in a very easy and professional way
           </p>
           <nav class="nav-container">
             <ul class="nav-container___list">
               <li class="nav-container___list--item">
                 <i class="far fa-object-group list-icon"></i>
-                <span class="list-text">Diseña</span>
+                <span class="list-text">Design</span>
               </li>
               <li class="nav-container___list--item">
                 <i class="far fa-keyboard list-icon"></i>
-                <span class="list-text">Rellena</span>
+                <span class="list-text">Fill</span>
               </li>
               <li class="nav-container___list--item">
                 <i class="fas fa-share-alt list-icon"></i>
-                <span class="list-text">Comparte</span>
+                <span class="list-text">Share</span>
               </li>
             </ul>
           </nav>
           <Link to="/card">
-            <span className="main-container__link">comenzar</span>
+            <span className="main-container__link">Start</span>
           </Link>
         </main>
         <Footer />

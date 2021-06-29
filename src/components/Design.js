@@ -8,7 +8,7 @@ function Design(props) {
     // <fieldset className='user-options'>
     <div className="color-design">
       <div className="color-container">
-        <p>COLORES</p>
+        <p>COLORS</p>
       </div>
       <div className="radio-color">
         <Palette
