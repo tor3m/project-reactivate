@@ -24,7 +24,7 @@ class Landing extends React.Component {
             Reactivate your present, design your future
           </h2>
           <p class="main-container__text">
-            Create your business cards in a very easy and professional way
+            Create your business card in a very easy and professional way
           </p>
           <nav class="nav-container">
             <ul class="nav-container___list">

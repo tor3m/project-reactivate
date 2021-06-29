@@ -51,7 +51,7 @@ body {
     // margin-bottom: 0;
   }
   &__title {
-    color: black;
+    color: #8d2366;
     font-family: $landing-title;
     font-weight: 900;
     font-size: 19px;
@@ -62,7 +62,7 @@ body {
 
   .nav-container {
     border: solid 1.6px;
-    box-shadow: 10px 5px 5px black;
+    box-shadow: 10px 5px 5px #3aa3a7;
     border-radius: 4px;
     width: 100%;
     display: flex;
@@ -84,7 +84,7 @@ body {
           font-size: 16px;
         }
         .list-icon {
-          color: #ec693c;
+          color: #8d2366;
           font-size: 22.4px;
           @media (min-width: 768px) {
             font-size: 28px;
@@ -94,10 +94,11 @@ body {
     }
   }
   .main-container__link {
-    color: $white-three;
+    color: #3aa3a7;
+    box-shadow: 10px 5px 5px black;
     font-weight: 600;
     font-size: 16px;
-    background-color: #ec693c;
+    background-color: white;
     border-radius: 21px;
     text-transform: uppercase;
     padding: 10px 20px;
@@ -109,7 +110,7 @@ body {
     transition: all 0.5s ease-in-out;
     &:hover {
       background-color: white;
-      color: #ec693c;
+      color: #8d2366;
       transform: scale(1.1);
     }
     @media (min-width: 768px) {
@@ -117,8 +118,6 @@ body {
     }
   }
 }
-
-
 
 .blanketfy-btn {
   width: 150px;
