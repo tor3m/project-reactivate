@@ -8,7 +8,7 @@ function Share(props) {
 
   const handleCreateCard = () => {
     const routeId = 'card';
-    fetch('http://localhost:4000/card', {
+    fetch('/card', {
       method: 'POST',
       headers: {
         Accept: 'application/json',

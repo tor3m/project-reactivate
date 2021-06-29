@@ -107,7 +107,7 @@ server.post('/card', (req, res) => {
     res.json(response);
   }
 });
-// Crear Tarjeta
+// Mostrar tarjeta
 server.get('/card/:cardId', (req, res) => {
   //console.log(req.params.cardId);
   // const foundCard = userCards.find(
