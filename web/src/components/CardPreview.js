@@ -1,5 +1,5 @@
 import Icons from "./Icons";
-import defaultAvatar from "../images/cohete.gif";
+import defaultAvatar from "../images/giftlogo.gif";
 
 function CardPreview(props) {
   // aqui hemos creado la misma variable que para el cuadradito con el condicional dentro, para que coja el defaultAvatar o la imagen que le queremos subir

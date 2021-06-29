@@ -4,7 +4,7 @@ function SuccessMessage(props) {
 
   return (
     <div className="card-done ">
-      <p className="tarjeta">La tarjeta ha sido creada:</p>
+      <p className="tarjeta">Your card has been created:</p>
       <a className="url js-generate" target="_blank" href={props.url}>
         <p className="url js-generate">URL: {props.url}</p>
       </a>
@@ -17,7 +17,7 @@ function SuccessMessage(props) {
       >
         <button className="twitter-share" type="button">
           <i className="fab fa-twitter list-icon2c"></i>
-          Compartir en twitter
+          Share in Twitter
         </button>
       </a>
     </div>

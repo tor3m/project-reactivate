@@ -19,7 +19,7 @@ function Inputs(props) {
   return (
     <div className='fill-container'>
       <label>
-        Nombre completo
+        Full Name
         <input
           className='js-form formies js-name'
           placeholder=' Sally Field'
@@ -30,7 +30,7 @@ function Inputs(props) {
         />
       </label>
       <label>
-        Puesto
+        Job
         <input
           className='js-form formies js-job'
           placeholder='Frontend Developer'
@@ -40,7 +40,7 @@ function Inputs(props) {
           onChange={handleInputs}
         />
       </label>
-      <p>Imagen de perfil</p>
+      <p>Profile Image</p>
 
       <div>
         <GetAvatar
@@ -65,7 +65,7 @@ function Inputs(props) {
           />
         </p>
         <p>
-          Teléfono
+          Phone
           <input
             className='js-form js-preview-phone formies js-phone'
             placeholder='000000000'

@@ -1,4 +1,4 @@
 function ErrorMessage() {
-  return <div className="card-done">Rellena todos los campos, por favor</div>;
+  return <div className="card-done">Please, fill out all the fields</div>;
 }
 export default ErrorMessage;
