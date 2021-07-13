@@ -7,7 +7,7 @@ Para la realización de este proyecto se ha utilizado -el Adalab Web starter kit
 Resultado
 Si quieres ver el resultado final , puedes acceder desde aquí:
 
-http://beta.adalab.es/project-promo-m-module-2-team-8/
+https://awesome-cards-profile-team-8.herokuapp.com
 
 1.Clonar el repositorio.
 
