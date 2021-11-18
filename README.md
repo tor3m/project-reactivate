@@ -1,52 +1,55 @@
-Proyecto grupal realizado durante el bootcamp de Adalab Promo Mileva. 
+👋 Hi there!
 
-El proyecto consiste en la refactorización del código heredado de otro grupo, utlizando React y creando la base de datos con Node JS y SQLite.
+![Reactivate](https://user-images.githubusercontent.com/81690198/142514491-379651db-080e-4e80-808d-b4fd7129a20c.png)
 
-Para la realización de este proyecto se ha utilizado -el Adalab Web starter kit](https://github.com/Adalab/Adalab-web-starter-kit), creado por la asociación Adalab. (creado con node y gulp) ¿Y qué es un Starter kit? Pues es una plantilla de proyecto con funcionalidades preinstaladas y preconfiguradas.
+##  "REACTIVATE" TEAM PROJECT 
+The project consists of refactoring the code inherited from another group, using React, and creating the database with Node JS and SQLite. 
 
-Resultado
-Si quieres ver el resultado final , puedes acceder desde aquí:
+## 💻 Technologies
+ ``VS Code``
+ ``HTML``
+ ``SASS``
+ ``REACT``
+ ``Node Js``
+ ``SQLite``
 
-https://awesome-cards-profile-team-8.herokuapp.com
+## 🛠️ Installation Steps 
 
-1.Clonar el repositorio.
+This project uses [Adalab Stater Kit](https://github.com/Adalab/adalab-web-starter-kit) (template), [Gulp](https://gulpjs.com/), [Node](https://nodejs.org/es/)  and [npm](https://www.npmjs.com/) . Go check them out if you don't have them locally installed.
 
-Clonar proyecto
-Pasos a seguir
-Clona este repositorio
-Instala las dependencias locales ejecutando en la terminal el comando:
-npm install
+How to run a project? 
 
-3. **Abre una terminal** en la carpeta raíz de tu repositorio.
-4. **Instala las dependencias** locales ejecutando en la terminal el comando:
+  1.	The repository
+      `git clone https://github.com/tor3m/project-team-404.git`
+  2.	Install dependencies
+    `npm install`
+  3.	Run the app
+     `npm start`
 
-```bash
-npm install
+🌟 You are all set!
 
-5. Por último, ejecuta el siguiente comando para  la visualización:
+## 🚀 Demo 
 
-```bash
-npm start
-Este comando abre una ventana de Chrome y muestra tu página web**, al igual que hace el plugin de VS Code Live Server (Go live).
+ https://awesome-cards-profile-team-8.herokuapp.com
 
-Por último...........Proyecto También tienes la opción de clonar el repositorio para mirar el código desde tu editor
+## 👍 Feedback
+Any questions or suggestions? Please feel free to contact me at torres.m3lly@gmail.com 
 
-NOTA: Necesitas tener instalado Node JS para trabajar con este Starter Kit:
+## 🍰 Contributing
+Please contribute using [GitHub](https://docs.github.com/en/get-started/quickstart/github-flow) Flow. Create a branch, add commits, and open a pull request.
 
-Pasos a seguir
-Clona este repositorio
-Instala las dependencias locales ejecutando en la terminal el comando:
-npm install
 
-3. **Abre una terminal** en la carpeta raíz de tu repositorio.
-4. **Instala las dependencias** locales ejecutando en la terminal el comando:
+## 🦸 Autors
 
-```bash
-npm install
-Por último, ejecuta el siguiente comando para la visualización:
-npm start
-Este comando abre una ventana de Chrome y muestra tu página web**, al igual que hace el plugin de VS Code Live Server (Go live).
+* Maribel Torres
+* Beatriz Mendoza
+* Jana Titarchuk
+* Rosa Berned
 
-Por último........... Si tienes cualquier sugerencia, no dudes en hacer PR!! toda posibilidad de mejora es bienvenida!!:)
+## 🤝Acknowledgements 
 
-Equipo Jana Titarchuk, Rosa Berned, Beatriz Mendoza y Maribel Torres.
+Many thanks to the Adalab team 💞
+
+## 📝License 
+
+MIT
