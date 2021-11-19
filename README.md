@@ -20,7 +20,7 @@ This project uses [Adalab Stater Kit](https://github.com/Adalab/adalab-web-start
 How to run a project? 
 
   1.	The repository
-      `git clone https://github.com/tor3m/project-team-404.git`
+      `git clone https://github.com/tor3m/project-reactivate.git`
   2.	Install dependencies
     `npm install`
   3.	Run the app
